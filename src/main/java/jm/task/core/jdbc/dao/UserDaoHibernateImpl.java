@@ -36,7 +36,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             session.getTransaction().commit();
         } catch (HibernateException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -50,7 +50,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             session.getTransaction().commit();
         } catch (HibernateException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -64,7 +64,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             session.getTransaction().commit();
         } catch (HibernateException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
     }
 
@@ -82,7 +82,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
                 session.getTransaction().commit();
             } catch (HibernateException e) {
-                e.getStackTrace();
+                e.printStackTrace();
             }
     }
 
@@ -100,7 +100,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             return usersList;
         } catch (HibernateException e) {
-            e.getStackTrace();
+            e.printStackTrace();
             return null;
         }
 
@@ -116,7 +116,7 @@ public class UserDaoHibernateImpl implements UserDao {
 
             session.getTransaction().commit();
         } catch (HibernateException e) {
-            e.getStackTrace();
+            e.printStackTrace();
         }
     }
 }
